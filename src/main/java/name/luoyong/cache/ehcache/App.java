@@ -4,10 +4,6 @@ import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;
 
-/**
- * Hello world!
- *
- */
 public class App  {
 
 	
@@ -23,7 +19,7 @@ public class App  {
 			Thread.sleep(1300);
 			Element luoyongElement = userCache.get("luoyong");
 			if(luoyongElement == null) {
-				System.out.println("lyElement is null");
+				System.out.println("lyElement is not in userCache now.");
 				System.exit(0);
 			}
 			User ly = (User)luoyongElement.getObjectValue();
