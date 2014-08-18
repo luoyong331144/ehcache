@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache name="ColorCache">
+
+	<diskStore path="java.io.tmpdir"/>
+
+  <cache name="userCache"
+         maxElementsInMemory="10"
+         maxElementsOnDisk="0"
+         eternal="false"
+         timeToIdleSeconds="2"
+         timeToLiveSeconds="3">
+  </cache>
+  
+</ehcache>
