@@ -19,7 +19,7 @@ public class App  {
 			Thread.sleep(1300);
 			Element luoyongElement = userCache.get("luoyong");
 			if(luoyongElement == null) {
-				System.out.println("lyElement is not in userCache now.");
+				System.out.println("luoyongElement is not in userCache now.");
 				System.exit(0);
 			}
 			User ly = (User)luoyongElement.getObjectValue();
